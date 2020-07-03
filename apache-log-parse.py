@@ -35,7 +35,7 @@ if __name__ == "__main__":
         start_dt = datetime.combine(args.between[0], time())
         end_dt = datetime.combine(args.between[1], time())
         #スタートとエンドが逆なら入れ替え
-        if start_dt < end_dt:
+        if start_dt > end_dt:
             tmp = end_dt
             end_dt = start_dt
             start_dt = tmp
